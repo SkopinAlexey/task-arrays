@@ -4,8 +4,10 @@
   разделенными запятыми.
 */
 export function arraySorting(data) {
-    let str = data.split(',');
-    return str.sort((a, b) => a - b);
+    return data
+        .split(',')
+        .sort((a, b) => a - b)
+        .join(',');
 }
 
 /*
